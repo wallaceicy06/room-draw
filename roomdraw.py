@@ -68,6 +68,15 @@ def welcome():
 
 def compare_with_ties(a, b):
     """
+    Comparison function for two items with the condition that if they are equal,
+    one of the two values is randomly selected to be greater than the other.
+
+    Arguments
+        a - the first item to compare
+        b - the second item to compare
+
+    Returns:
+        -1 if a < b, 1 if a > b, or randomly either -1 or 1 if a = b
     """
     diff = cmp(a, b)
     return diff if diff else random.choice([-1,1])
