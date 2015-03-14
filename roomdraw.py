@@ -105,7 +105,7 @@ def run_roomdraw(names_file, delay=0.5, is_desc=False):
             for i in xrange(len(draw_order)):
                 pts, group = draw_order[i]
 
-                print str(i) + ': ' + group + ' (' + str(pts) + ')'
+                print str(i + 1) + ': ' + group + ' (' + str(pts) + ')'
                 time.sleep(delay)
 
             return draw_order
@@ -137,8 +137,9 @@ def write_results(out_file, draw_order):
         with open(out_file, 'w') as out_f:
             out_f.write('Selection Order:\n')
 
-            for pts, group in draw_order:
-                out_f.write(str(pts) + ': ' + group + '\n')
+            for i in xrange(len(draw_order)):
+                pts, group = draw_order[i]
+                out_f.write(str(i + 1) + ': ' + group + ' (' + str(pts) + ')\n')
 
     except IOError:
         print >> sys.stderr, 'There was an error opening the specified' + \

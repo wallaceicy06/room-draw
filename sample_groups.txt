@@ -1,0 +1,6 @@
+3.0 Sawyer, Sean, Adam, Emily, Kevin
+10000.0 Elizabeth, Gabriel, Mason, Peter, Gilbert, Kelsey
+3.0 Will, Graham, John
+2.0 Maddie, Leah, Maggie, Kate, Andrea, Tyler
+3.0 Isabel, Margeaux, Shaan, Aaron
+2.0 Farhan, Danyal, Vicky, Shannon, Mackenzie, Emily
