@@ -108,6 +108,8 @@ def run_roomdraw(names_file, delay=0.5, is_desc=False):
                 l = line.split()
                 groups.append((float(l[0]), (' '.join(l[1:]).strip())))
 
+            random.shuffle(groups)
+
             draw_order = sorted(groups, key=lambda g: g[0], \
                                 cmp=compare_with_ties, reverse=is_desc)
 
