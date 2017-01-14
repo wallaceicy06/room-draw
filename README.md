@@ -1,5 +1,5 @@
-RoomDraw
-========
+Room Draw
+=========
 
 A program to sort groups for room selection by point value, and resolve ties
 randomly.
